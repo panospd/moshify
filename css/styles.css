@@ -792,6 +792,7 @@ a {
 
 .feature {
     gap: 4rem 2rem;
+    margin: 12rem 0;
 }
 
 /* Features */
@@ -801,4 +802,14 @@ a {
 
 .feature__image {
     width: 100%;
+}
+
+.feature:first-of-type {
+    margin-top: 6rem;
+}
+
+@media screen and (min-width: 768px) {
+    .feature:nth-of-type(even) .feature__content {
+        order: 2;
+    }
 }
